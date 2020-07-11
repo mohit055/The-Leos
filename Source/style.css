@@ -82,7 +82,6 @@ header{
 
 #thelist li:hover #dropdown{
     display: block;
-    height: initial;
 }
 
 /*For the desktop view*/

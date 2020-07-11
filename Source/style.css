@@ -1,0 +1,311 @@
+/*Reset Default Styling*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/*For the whole body*/
+
+body{
+    background-color: #c3c3c3;
+}
+
+/*HEADER*/
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+}
+
+.header-leo{
+    color: rgb(1, 1, 1);
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 850;
+    padding: 13px 0;
+}
+
+#thelist{
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    list-style: none;
+}
+
+#thelist li{
+    float: left;
+    padding: 0 16px;
+    position: relative;
+}
+
+#thelist li a{
+    color: rgb(1, 1, 1);
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+
+.header-animal{
+    display: none;
+}
+
+#dropdown{
+    display: none;
+    position: absolute;
+    background-color: rgb(240, 240, 240);
+    width: 104px;
+    padding: 5px 0;
+    list-style: none;
+}
+
+#dropdown li{
+    padding: 0 10px 0 10px 5px;
+}
+
+#dropdown li a{
+    line-height: 36px;
+    font-size: 14px;
+}
+
+#dropdown li a:hover{
+    background-color: grey;
+    font-size: 15x;
+}
+
+#thelist li:hover #dropdown{
+    display: block;
+    height: initial;
+}
+
+/*For the desktop view*/
+
+@media only screen and (min-width: 1000px){
+    
+    .header-leo{
+        margin: 31px 0;
+        padding: 0 20px 0 20px;
+        float: left;
+        font-weight: bold;
+        line-height: 38px;
+        border-right: 3px solid black;
+        
+    }
+    
+    header nav ul{
+        float: left;
+    }
+    
+    header nav ul a{
+        line-height: 100px;
+    }
+
+    header nav ul a:hover{
+        color: rgb(86, 87, 84);
+    }
+
+    .header-animal{
+        display: block ;
+        color: rgb(1, 1, 1);
+        font-size: 16px;
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        float: right;
+        line-height: 38px;
+        padding: 0 5px 0 5px;
+        border: 1px solid #111;
+        border-collapse: collapse;
+        margin: 30px 0;
+        margin-right: 20px;
+    }
+
+    .header-animal:hover{
+        color: rgb(86, 87, 84);
+    }
+
+    #dropdown{
+        margin-top: -38px;
+        width: 105px;
+    }
+}
+
+/*MAIN*/
+
+main{
+    padding-top: 100px;
+}
+
+.main-banner{
+    width: 100%;
+    height: calc(100vh - 300px);
+    background-image: url('Image/lion_banner.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.center-banner{
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 20px;
+}
+
+h2{
+    color: whitesmoke;
+    font-size: 60px;
+    line-height: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 820;
+    text-shadow: 2px 2px 8px #111;
+}
+
+h1{
+    color: lightyellow;
+    font-size: 18px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    line-height: 25px;
+    text-shadow: 0.25px 0.25px 1px #111;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-links div{
+    margin: 16px 16px 0px;
+    background-color: rgb(250, 250, 192);
+    height: 65px;
+    width: calc(100% - 32px);
+}
+
+.main-links a div h3{
+    font-size: 22px;
+    font-weight: 300;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    line-height: 65px;
+    text-transform: uppercases;
+    color: rgba(1, 1, 1, 1);
+}
+
+/*For the desktop view*/
+
+@media only screen and (min-width: 1000px){
+    
+    .main-wrapper{
+        width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .main-banner{
+        height: 500px;
+        background-position: top;
+    }
+
+    .main-links{
+        overflow: hidden;
+    }
+    
+    .main-links div{
+        margin: 20px 10px 0px;
+        height: 185px;
+    }
+    
+    .square{
+        width: calc(25% - 20px) !important;
+        float: left;
+    }
+
+    .rectangle{
+        width: calc(50% - 20px) !important;
+        float: left;
+    }
+
+    .main-links a div h3{
+        line-height: 185px;
+    }
+}
+
+/*FOOTER*/
+
+footer{
+    width: calc(100%-40px);
+    padding: 40px 40px;
+    margin-top: 20px;
+    background-color: rgba(1, 1, 1, 1);
+    overflow: hidden;
+}
+
+footer ul{
+    width: fit-content;
+    float: left;
+}
+
+footer ul li{
+    display: block;
+    list-style: none;
+}
+
+footer ul li a{
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: initial;
+    line-height: 35px;
+}
+
+.footer-animal{
+    display: none;
+}
+
+.footer-logo{
+    width: 40px;
+    height: 200px;
+    float: right;
+    line-height: 20px;
+    margin-top: -7.8px;
+}
+
+.footer-logo img{
+    width: 100%;
+    padding: 3px 0;
+}
+
+/*For the desktop view*/
+
+@media only screen and (min-width: 1000px){
+    
+    .footer-animal{
+        display: block;
+        text-transform: uppercase;
+    }
+
+    footer ul{
+        width: fit-content;
+        float: left;
+        padding: 0 45px;
+        margin-left: 10px;
+    }
+
+    footer ul li p{
+        font-family: 'Lato', sans-serif;
+        color: white;
+        size: 30px;
+        line-height: 35px;
+        text-transform: uppercase;
+    }
+
+    .footer-logo{
+        padding: 0 45px;
+        margin-right: 10px;
+    }
+
+}
